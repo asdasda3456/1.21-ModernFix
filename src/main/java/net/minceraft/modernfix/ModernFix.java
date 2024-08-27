@@ -1,6 +1,7 @@
 package net.minceraft.modernfix;
 
 import com.mojang.logging.LogUtils;
+import net.minceraft.modernfix.block.ModernFixBlocks;
 import net.minceraft.modernfix.item.ModernFixItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,8 @@ public class ModernFix {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModernFixItems.register(modEventBus);
+        ModernFixBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,6 +52,10 @@ public class ModernFix {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModernFixItems.SNIFFERITE);
             event.accept(ModernFixItems.SNIFFERITE_RAW);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModernFixBlocks.SNIFFER_BLOCK);
+
         }
     }
 

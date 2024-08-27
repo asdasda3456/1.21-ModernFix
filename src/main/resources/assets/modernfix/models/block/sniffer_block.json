@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "modernfix:block/sniffer_block_bottom",
+    "up": "modernfix:block/sniffer_block_top",
+    "north": "modernfix:block/sniffer_block_front",
+    "south": "modernfix:block/sniffer_block_side",
+    "west": "modernfix:block/sniffer_block_side",
+    "east": "modernfix:block/sniffer_block_side"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "modernfix:block/sniffer_block" },
+    "facing=south": { "model": "modernfix:block/sniffer_block_rotated_180" },
+    "facing=west": { "model": "modernfix:block/sniffer_block_rotated_270" },
+    "facing=east": { "model": "modernfix:block/sniffer_block_rotated_90" }
+  }
+}

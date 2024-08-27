@@ -48,6 +48,7 @@ public class ModernFix {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModernFixItems.SNIFFERITE);
+            event.accept(ModernFixItems.SNIFFERITE_RAW);
         }
     }
 

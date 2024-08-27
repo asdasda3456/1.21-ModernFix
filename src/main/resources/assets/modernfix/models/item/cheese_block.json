@@ -1,0 +1,6 @@
+{
+  "parent": "modernfix:cheese_block",
+  "textures": {
+    "all": "modernfix:block/cheese_block"
+  }
+}

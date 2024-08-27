@@ -55,6 +55,7 @@ public class ModernFix {
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModernFixItems.CHEESE);
+            event.accept(ModernFixBlocks.CHEESE_BLOCK);
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModernFixBlocks.SNIFFER_BLOCK);

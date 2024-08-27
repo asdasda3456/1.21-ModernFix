@@ -20,7 +20,7 @@ public class ModernFixBlocks {
 
     public static final RegistryObject<Block> SNIFFER_BLOCK = registerBlock("sniffer_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).sound(SoundType.GRASS)));
+                    .strength(1f).sound(SoundType.GRASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,11 @@
+{
+  "parent": "modernfix:sniffer_block",
+  "textures": {
+    "north": "modernfix:block/sniffer_block_front",
+    "south": "modernfix:block/sniffer_block_side",
+    "east": "modernfix:block/sniffer_block_side",
+    "west": "modernfix:block/sniffer_block_side",
+    "top": "modernfix:block/block_top",
+    "bottom": "modernfix:block/sniffer_block_side"
+  }
+}

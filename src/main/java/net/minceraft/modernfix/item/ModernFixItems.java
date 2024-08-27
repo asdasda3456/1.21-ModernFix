@@ -1,6 +1,7 @@
 package net.minceraft.modernfix.item;
 
 import net.minceraft.modernfix.ModernFix;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,11 @@ public class ModernFixItems
 
     public static final RegistryObject<Item> SNIFFERITE_RAW = ITEMS.register("raw_snifferite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5)  // Amount of hunger restored
+                    .build())));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

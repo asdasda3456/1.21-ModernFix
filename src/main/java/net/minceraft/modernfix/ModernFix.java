@@ -53,9 +53,11 @@ public class ModernFix {
             event.accept(ModernFixItems.SNIFFERITE);
             event.accept(ModernFixItems.SNIFFERITE_RAW);
         }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModernFixItems.CHEESE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModernFixBlocks.SNIFFER_BLOCK);
-
         }
     }
 

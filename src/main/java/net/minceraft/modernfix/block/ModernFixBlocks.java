@@ -25,6 +25,10 @@ public class ModernFixBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0f)));
 
+    public static final RegistryObject<Block> SNIFFERITE_ORE = registerBlock("snifferite_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

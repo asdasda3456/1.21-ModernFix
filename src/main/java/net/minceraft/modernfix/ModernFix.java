@@ -59,6 +59,7 @@ public class ModernFix {
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModernFixBlocks.SNIFFER_BLOCK);
+            event.accept(ModernFixBlocks.SNIFFERITE_ORE);
         }
     }
 
